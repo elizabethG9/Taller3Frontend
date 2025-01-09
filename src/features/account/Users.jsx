@@ -89,11 +89,9 @@ const Users = () => {
 
   useEffect(() => {
     if (formData.priority < 0 || formData.priority > 1) {
-      setHelperPriority("Privilegio inválido");
       setErrorPriority(true);
     } else {
       setErrorPriority(false);
-      setHelperPriority("");
     }
   }, [formData.priority]);
 
@@ -158,7 +156,6 @@ const Users = () => {
   };
 
   const handleClickOpenEdit = (user, userId) => {
-    setCurrentUser(user);
     setCurrentUserId(userId);
     setFormData({
       name: user.name,
@@ -179,7 +176,6 @@ const Users = () => {
     setHelperEmail("");
     setHelperName("");
     setHelperLastname("");
-    setHelperPriority();
     setOpenEdit(false);
   };
 
