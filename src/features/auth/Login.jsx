@@ -188,7 +188,7 @@ const Login = () => {
                 mt={3}
                 textAlign={"center"}
               >
-                Panel 
+                Panel con despliegue automático
               </Typography>
               <Typography
                 component="h1"
